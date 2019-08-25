@@ -3,7 +3,7 @@ class Anagram
   attr_accessor :match
 
   def initialize(anagram)
-      @anagram = anagram
+    @anagram = anagram
   end
 
   def match(words)
@@ -11,6 +11,6 @@ class Anagram
   end
 
   def is_anagram(word)
-
+    word.chars.sort == @anagram.chars.sort
   end
 end
