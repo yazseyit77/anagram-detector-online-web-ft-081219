@@ -5,7 +5,7 @@ class Anagram
   end
 
   def match(words)
-    words.detect{|word| is_anagram?(word)}
+    words.select{|word| is_anagram?(word)}
   end
 
   def is_anagram(word)
