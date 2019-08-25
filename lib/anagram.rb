@@ -6,7 +6,7 @@ class Anagram
       @anagram = anagram
   end
 
-  def match
-
+  def match(words)
+    words.detect{|word| is_anagram?(word)}
   end
 end
