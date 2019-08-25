@@ -8,7 +8,7 @@ class Anagram
     words.select{|word| is_anagram?(word)}
   end
 
-  def is_anagram(word)
+  def is_anagram?(word)
     word.chars.sort == @anagram.chars.sort
   end
 end
